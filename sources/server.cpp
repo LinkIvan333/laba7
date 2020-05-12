@@ -24,7 +24,7 @@ void Server::on_login(const std::string & msg, std::shared_ptr<Client>& client)
 void Server::on_ping(std::shared_ptr<Client>& client)
 {
   std::lock_guard<std::recursive_mutex> lock(mutex);
-    std::string s= (clients_changed ?
+    std::string s = (clients_changed ?
     "ping client_list_changed\n" : "ping ok\n");
     client->socket.write_some(boost::asio::buffer(s));
     clients_changed = false;
