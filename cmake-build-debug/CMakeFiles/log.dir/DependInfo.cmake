@@ -5,11 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ivan/Git/lab-07-asio-server-master/sources/log.cpp" "/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/log.dir/sources/log.cpp.o"
+  "/home/ivan/Git/lab-07-asio-server-master/sources/main.cpp" "/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/log.dir/sources/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../"
   "../include"
   "/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"
   )

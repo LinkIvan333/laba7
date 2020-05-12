@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ivan/Git/lab-07-asio-server-master/include 
+CXX_INCLUDES = -I/home/ivan/Git/lab-07-asio-server-master -I/home/ivan/Git/lab-07-asio-server-master/include 
 

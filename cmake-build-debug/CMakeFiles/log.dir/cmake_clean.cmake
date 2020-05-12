@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/log.dir/sources/log.cpp.o"
+  "CMakeFiles/log.dir/sources/main.cpp.o"
   "liblogd.a"
   "liblogd.pdb"
 )

@@ -79,16 +79,16 @@ clean: CMakeFiles/main.dir/clean
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: CMakeFiles/log.dir/all
 CMakeFiles/tests.dir/all: CMakeFiles/template.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/log.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
@@ -110,12 +110,12 @@ CMakeFiles/tests.dir/clean:
 CMakeFiles/log.dir/all:
 	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/depend
 	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target log"
 .PHONY : CMakeFiles/log.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/log.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/log.dir/rule
@@ -137,7 +137,7 @@ CMakeFiles/log.dir/clean:
 CMakeFiles/main1.dir/all:
 	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/depend
 	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target main1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target main1"
 .PHONY : CMakeFiles/main1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -164,12 +164,12 @@ CMakeFiles/main1.dir/clean:
 CMakeFiles/template.dir/all: CMakeFiles/log.dir/all
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/depend
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target template"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target template"
 .PHONY : CMakeFiles/template.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/template.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/template.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/template.dir/rule
@@ -188,16 +188,16 @@ CMakeFiles/template.dir/clean:
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: CMakeFiles/log.dir/all
 CMakeFiles/main.dir/all: CMakeFiles/template.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/log.dir/all
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule

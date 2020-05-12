@@ -34,9 +34,11 @@ hunter_add_package(Boost COMPONENTS filesystem log system thread)
 find_package(Boost CONFIG REQUIRED filesystem log log_setup system thread)
 find_package(Threads)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+
 add_library(log STATIC
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/log.cpp
-        )
+        sources/main.cpp)
 
 add_library(template STATIC
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/server.cpp)

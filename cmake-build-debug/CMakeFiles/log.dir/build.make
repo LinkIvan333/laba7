@@ -70,17 +70,32 @@ CMakeFiles/log.dir/sources/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/log.dir/sources/log.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/Git/lab-07-asio-server-master/sources/log.cpp -o CMakeFiles/log.dir/sources/log.cpp.s
 
+CMakeFiles/log.dir/sources/main.cpp.o: CMakeFiles/log.dir/flags.make
+CMakeFiles/log.dir/sources/main.cpp.o: ../sources/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/log.dir/sources/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/log.dir/sources/main.cpp.o -c /home/ivan/Git/lab-07-asio-server-master/sources/main.cpp
+
+CMakeFiles/log.dir/sources/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/log.dir/sources/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/Git/lab-07-asio-server-master/sources/main.cpp > CMakeFiles/log.dir/sources/main.cpp.i
+
+CMakeFiles/log.dir/sources/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/log.dir/sources/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/Git/lab-07-asio-server-master/sources/main.cpp -o CMakeFiles/log.dir/sources/main.cpp.s
+
 # Object files for target log
 log_OBJECTS = \
-"CMakeFiles/log.dir/sources/log.cpp.o"
+"CMakeFiles/log.dir/sources/log.cpp.o" \
+"CMakeFiles/log.dir/sources/main.cpp.o"
 
 # External object files for target log
 log_EXTERNAL_OBJECTS =
 
 liblogd.a: CMakeFiles/log.dir/sources/log.cpp.o
+liblogd.a: CMakeFiles/log.dir/sources/main.cpp.o
 liblogd.a: CMakeFiles/log.dir/build.make
 liblogd.a: CMakeFiles/log.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblogd.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library liblogd.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/log.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/log.dir/link.txt --verbose=$(VERBOSE)
 

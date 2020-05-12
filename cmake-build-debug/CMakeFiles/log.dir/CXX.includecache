@@ -26649,6 +26649,6 @@ boost/winapi/basic_types.hpp
 -
 
 /home/ivan/Git/lab-07-asio-server-master/sources/log.cpp
-log.h
-/home/ivan/Git/lab-07-asio-server-master/sources/log.h
+include/log.h
+/home/ivan/Git/lab-07-asio-server-master/sources/include/log.h
 

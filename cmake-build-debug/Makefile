@@ -219,6 +219,7 @@ sources/main.o: sources/main.cpp.o
 
 # target to build an object file
 sources/main.cpp.o:
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.o
 .PHONY : sources/main.cpp.o
 
@@ -228,6 +229,7 @@ sources/main.i: sources/main.cpp.i
 
 # target to preprocess a source file
 sources/main.cpp.i:
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.i
 .PHONY : sources/main.cpp.i
 
@@ -237,6 +239,7 @@ sources/main.s: sources/main.cpp.s
 
 # target to generate assembly for a file
 sources/main.cpp.s:
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
 

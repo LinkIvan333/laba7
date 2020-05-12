@@ -1,9 +1,8 @@
 //Copyright 2019 <LinkIvan333>
-#include "log.h"
+#include "include/log.h"
 
 void init()
 {
-
   boost::log::core::get()->add_global_attribute(
       "TimeStamp", boost::log::attributes::local_clock());
   auto sinkFile = boost::log::add_file_log(

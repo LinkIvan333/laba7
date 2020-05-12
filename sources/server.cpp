@@ -3,7 +3,8 @@
 #include <server.h>
 
 void Server::connectionHandler(){
-  tcp::acceptor acceptor(ioService, boost::asio::ip::tcp::endpoint{boost::asio::ip::tcp::v4(), PORT});
+  tcp::acceptor acceptor(ioService,
+  boost::asio::ip::tcp::endpoint{boost::asio::ip::tcp::v4(), PORT});
   while (true) {
         auto client = std::make_shared<Client>(ioService);
         acceptor.accept(client -> socket);
@@ -14,7 +15,7 @@ void Server::connectionHandler(){
 void Server::on_login(const std::string & msg, std::shared_ptr<Client>& client)
 {
   std::lock_guard<std::recursive_mutex> lock(mutex);
-    client->login = std::string(msg,6);
+    client->login = std::string(msg, 6);
     logInfoClientsMessage("Client logged in: " + client->login);
     client->socket.write_some(boost::asio::buffer("login ok\n"));
     clients_changed = true;
@@ -23,7 +24,8 @@ void Server::on_login(const std::string & msg, std::shared_ptr<Client>& client)
 void Server::on_ping(std::shared_ptr<Client>& client)
 {
   std::lock_guard<std::recursive_mutex> lock(mutex);
-    std::string s= (clients_changed ? "ping client_list_changed\n" : "ping ok\n");
+    std::string s= (clients_changed ?
+    "ping client_list_changed\n" : "ping ok\n");
     client->socket.write_some(boost::asio::buffer(s));
     clients_changed = false;
 }
@@ -37,7 +39,7 @@ void Server::on_clients(std::shared_ptr<Client>& client)
             msg += (client)->login + " ";
         }
     }
-    logInfoClientsMessage( client->login + " asked clients list");
+    logInfoClientsMessage(client->login + " asked clients list");
     client->socket.write_some(boost::asio::buffer("clients " + msg + "\n"));
 }
 
@@ -45,7 +47,8 @@ void Server::answer_to_client(std::shared_ptr<Client>& client) {
     try {
         if (client->socket.available()) {
             already_read_ += client->socket.read_some(
-                    boost::asio::buffer(buff + already_read_, max_msg - already_read_));
+                    boost::asio::buffer(buff + already_read_,
+                                  max_msg - already_read_));
         }
       bool found_enter = std::find(buff, buff + already_read_,
                                    '\n') < buff + already_read_;
@@ -70,13 +73,14 @@ void Server::clientHandler(){
     while (true) {
     std::this_thread::sleep_for(second);
       std::lock_guard<std::recursive_mutex> lock(mutex);
-      for (auto iter = clients.begin(); iter != clients.end(); ++ iter) {
+      for (auto iter = clients.begin(); iter != clients.end(); ++iter) {
         (*iter)->socket.non_blocking(true);
         answer_to_client(*iter);
       }
-      std::vector<std::shared_ptr<Client>> *clients_new=new std::vector<std::shared_ptr<Client>>;
-      for (auto iter = clients.begin(); iter != clients.end(); ++ iter) {
-        if(std::chrono::system_clock::to_time_t(
+      std::vector<std::shared_ptr<Client>> *clients_new =
+          new std::vector<std::shared_ptr<Client>>;
+      for (auto iter = clients.begin(); iter != clients.end(); ++iter) {
+        if (std::chrono::system_clock::to_time_t(
             std::chrono::system_clock::now()) -
         std::chrono::system_clock::to_time_t((*iter)->lastLogin) <
         failTime){
@@ -86,7 +90,7 @@ void Server::clientHandler(){
           logInfoClientsMessage((*iter)->login+" terminated");
         }
       }
-      clients=*clients_new;
+      clients = (*clients_new);
       delete clients_new;
     }
 }

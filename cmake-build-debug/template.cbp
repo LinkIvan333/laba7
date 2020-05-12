@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -69,6 +70,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -94,6 +96,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -119,6 +122,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -144,6 +148,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -168,6 +173,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -202,6 +208,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -227,6 +234,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -252,6 +260,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -277,6 +286,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
 					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -300,6 +310,7 @@
 			<Option target="log"/>
 		</Unit>
 		<Unit filename="/home/ivan/Git/lab-07-asio-server-master/sources/main.cpp">
+			<Option target="log"/>
 			<Option target="main"/>
 		</Unit>
 		<Unit filename="/home/ivan/Git/lab-07-asio-server-master/sources/server.cpp">
