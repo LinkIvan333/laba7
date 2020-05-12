@@ -2,13 +2,7 @@ cmake_minimum_required(VERSION 3.4)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-foreach(policy
-        CMP0074 # CMake 3.12
-        )
-  if(POLICY ${policy})
-    cmake_policy(SET ${policy} NEW)
-  endif()
-endforeach()
+
 option(BUILD_COVERAGE "Build coverage" OFF)
 
 set(
@@ -43,9 +37,6 @@ add_library(log STATIC
 add_library(template STATIC
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/server.cpp)
 
-add_executable(main1
-        ${CMAKE_CURRENT_SOURCE_DIR}/sources/server.cpp
-        )
 add_executable(main
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
         )
@@ -60,25 +51,14 @@ target_include_directories(log
 target_include_directories(template 
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-target_include_directories(main1
-        PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-        )
+
 target_include_directories(tests
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-target_link_libraries(log ${CMAKE_THREAD_LIBS_INIT}
-        Boost::log_setup
-        Boost::log
-        Boost::thread
-        Boost::filesystem
-        Boost::system)
+target_link_libraries(log Boost::log_setup Boost::log Boost::thread Boost::filesystem Boost::system)
 
-target_link_libraries(template ${CMAKE_THREAD_LIBS_INIT}
-        Boost::log_setup
-        Boost::log
-        Boost::thread
-        Boost::filesystem
-        Boost::system)
+target_link_libraries(template Boost::log_setup Boost::log Boost::thread Boost::filesystem Boost::system)
+
 target_link_libraries(template log)
 target_link_libraries(tests GTest::main template)
 target_link_libraries(main template)

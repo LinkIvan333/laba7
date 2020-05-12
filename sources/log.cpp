@@ -1,4 +1,4 @@
-//Copyright 2019 <LinkIvan333>
+//Copyright 2020 <LinkIvan333>
 #include "include/log.h"
 
 void init()

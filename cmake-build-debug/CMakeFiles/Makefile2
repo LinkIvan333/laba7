@@ -53,11 +53,10 @@ CMAKE_BINARY_DIR = /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/tests.dir/all
-all: CMakeFiles/log.dir/all
-all: CMakeFiles/main1.dir/all
 all: CMakeFiles/template.dir/all
 all: CMakeFiles/main.dir/all
+all: CMakeFiles/log.dir/all
+all: CMakeFiles/tests.dir/all
 
 .PHONY : all
 
@@ -67,95 +66,12 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/tests.dir/clean
-clean: CMakeFiles/log.dir/clean
-clean: CMakeFiles/main1.dir/clean
 clean: CMakeFiles/template.dir/clean
 clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/log.dir/clean
+clean: CMakeFiles/tests.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tests.dir
-
-# All Build rule for target.
-CMakeFiles/tests.dir/all: CMakeFiles/template.dir/all
-CMakeFiles/tests.dir/all: CMakeFiles/log.dir/all
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target tests"
-.PHONY : CMakeFiles/tests.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/tests.dir/rule
-
-# Convenience name for target.
-tests: CMakeFiles/tests.dir/rule
-
-.PHONY : tests
-
-# clean rule for target.
-CMakeFiles/tests.dir/clean:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
-.PHONY : CMakeFiles/tests.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/log.dir
-
-# All Build rule for target.
-CMakeFiles/log.dir/all:
-	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/depend
-	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target log"
-.PHONY : CMakeFiles/log.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/log.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/log.dir/rule
-
-# Convenience name for target.
-log: CMakeFiles/log.dir/rule
-
-.PHONY : log
-
-# clean rule for target.
-CMakeFiles/log.dir/clean:
-	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/clean
-.PHONY : CMakeFiles/log.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/main1.dir
-
-# All Build rule for target.
-CMakeFiles/main1.dir/all:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/depend
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target main1"
-.PHONY : CMakeFiles/main1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/main1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/main1.dir/rule
-
-# Convenience name for target.
-main1: CMakeFiles/main1.dir/rule
-
-.PHONY : main1
-
-# clean rule for target.
-CMakeFiles/main1.dir/clean:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/clean
-.PHONY : CMakeFiles/main1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/template.dir
@@ -164,7 +80,7 @@ CMakeFiles/main1.dir/clean:
 CMakeFiles/template.dir/all: CMakeFiles/log.dir/all
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/depend
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target template"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target template"
 .PHONY : CMakeFiles/template.dir/all
 
 # Build rule for subdir invocation for target.
@@ -211,6 +127,61 @@ main: CMakeFiles/main.dir/rule
 CMakeFiles/main.dir/clean:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
 .PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/log.dir
+
+# All Build rule for target.
+CMakeFiles/log.dir/all:
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/depend
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target log"
+.PHONY : CMakeFiles/log.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/log.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/log.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/log.dir/rule
+
+# Convenience name for target.
+log: CMakeFiles/log.dir/rule
+
+.PHONY : log
+
+# clean rule for target.
+CMakeFiles/log.dir/clean:
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/clean
+.PHONY : CMakeFiles/log.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tests.dir
+
+# All Build rule for target.
+CMakeFiles/tests.dir/all: CMakeFiles/template.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/log.dir/all
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target tests"
+.PHONY : CMakeFiles/tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: CMakeFiles/tests.dir/rule
+
+.PHONY : tests
+
+# clean rule for target.
+CMakeFiles/tests.dir/clean:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
+.PHONY : CMakeFiles/tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

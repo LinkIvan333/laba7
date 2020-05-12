@@ -293,13 +293,13 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
 //Dependencies for the target
-log_LIB_DEPENDS:STATIC=general;-lpthread;general;Boost::log_setup;general;Boost::log;general;Boost::thread;general;Boost::filesystem;general;Boost::system;
+log_LIB_DEPENDS:STATIC=general;Boost::log_setup;general;Boost::log;general;Boost::thread;general;Boost::filesystem;general;Boost::system;
 
 //Value Computed by CMake
 template_BINARY_DIR:STATIC=/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug
 
 //Dependencies for the target
-template_LIB_DEPENDS:STATIC=general;-lpthread;general;Boost::log_setup;general;Boost::log;general;Boost::thread;general;Boost::filesystem;general;Boost::system;general;log;
+template_LIB_DEPENDS:STATIC=general;Boost::log_setup;general;Boost::log;general;Boost::thread;general;Boost::filesystem;general;Boost::system;general;log;
 
 //Value Computed by CMake
 template_SOURCE_DIR:STATIC=/home/ivan/Git/lab-07-asio-server-master

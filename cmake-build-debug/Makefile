@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/ivan/clion-2020.1.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -88,6 +77,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/ivan/clion-2020.1.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,45 +122,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tests
-
-# Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
-
-# fast build rule for target.
-tests/fast:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
-
-#=============================================================================
-# Target rules for targets named log
-
-# Build rule for target.
-log: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 log
-.PHONY : log
-
-# fast build rule for target.
-log/fast:
-	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
-.PHONY : log/fast
-
-#=============================================================================
-# Target rules for targets named main1
-
-# Build rule for target.
-main1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main1
-.PHONY : main1
-
-# fast build rule for target.
-main1/fast:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
-.PHONY : main1/fast
-
-#=============================================================================
 # Target rules for targets named template
 
 # Build rule for target.
@@ -185,6 +146,32 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named log
+
+# Build rule for target.
+log: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 log
+.PHONY : log
+
+# fast build rule for target.
+log/fast:
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
+.PHONY : log/fast
+
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
 
 sources/log.o: sources/log.cpp.o
 
@@ -219,8 +206,8 @@ sources/main.o: sources/main.cpp.o
 
 # target to build an object file
 sources/main.cpp.o:
-	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.o
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.o
 .PHONY : sources/main.cpp.o
 
 sources/main.i: sources/main.cpp.i
@@ -229,8 +216,8 @@ sources/main.i: sources/main.cpp.i
 
 # target to preprocess a source file
 sources/main.cpp.i:
-	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.i
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.i
 .PHONY : sources/main.cpp.i
 
 sources/main.s: sources/main.cpp.s
@@ -239,8 +226,8 @@ sources/main.s: sources/main.cpp.s
 
 # target to generate assembly for a file
 sources/main.cpp.s:
-	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.s
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
 
 sources/server.o: sources/server.cpp.o
@@ -249,7 +236,6 @@ sources/server.o: sources/server.cpp.o
 
 # target to build an object file
 sources/server.cpp.o:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/sources/server.cpp.o
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/sources/server.cpp.o
 .PHONY : sources/server.cpp.o
 
@@ -259,7 +245,6 @@ sources/server.i: sources/server.cpp.i
 
 # target to preprocess a source file
 sources/server.cpp.i:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/sources/server.cpp.i
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/sources/server.cpp.i
 .PHONY : sources/server.cpp.i
 
@@ -269,7 +254,6 @@ sources/server.s: sources/server.cpp.s
 
 # target to generate assembly for a file
 sources/server.cpp.s:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/sources/server.cpp.s
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/sources/server.cpp.s
 .PHONY : sources/server.cpp.s
 
@@ -307,13 +291,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... tests"
-	@echo "... log"
-	@echo "... main1"
 	@echo "... test"
 	@echo "... template"
 	@echo "... main"
+	@echo "... edit_cache"
+	@echo "... log"
+	@echo "... tests"
 	@echo "... sources/log.o"
 	@echo "... sources/log.i"
 	@echo "... sources/log.s"

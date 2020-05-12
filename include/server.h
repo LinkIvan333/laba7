@@ -6,7 +6,7 @@
 #include <string>
 #include <chrono>
 #include <thread>
-#include <boost/thread/thread.hpp>
+#include <boost/thread.hpp>
 #include <deque>
 #include <mutex>
 #include <boost/asio.hpp>

@@ -27,170 +27,6 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tests">
-				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
-					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tests/fast">
-				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
-					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="log">
-				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/liblogd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
-					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 log"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="log/fast">
-				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/liblogd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
-					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 log/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="main1">
-				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/main1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 main1"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="main1/fast">
-				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/main1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
-					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 main1/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="test">
 				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
 				<Option type="4"/>
@@ -305,16 +141,129 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="log">
+				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/liblogd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
+					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 log"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="log/fast">
+				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/liblogd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
+					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 log/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests">
+				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
+					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests/fast">
+				<Option output="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master"/>
+					<Add directory="/home/ivan/Git/lab-07-asio-server-master/include"/>
+					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/home/ivan/Git/lab-07-asio-server-master/sources/log.cpp">
 			<Option target="log"/>
 		</Unit>
 		<Unit filename="/home/ivan/Git/lab-07-asio-server-master/sources/main.cpp">
-			<Option target="log"/>
 			<Option target="main"/>
+			<Option target="log"/>
 		</Unit>
 		<Unit filename="/home/ivan/Git/lab-07-asio-server-master/sources/server.cpp">
-			<Option target="main1"/>
 			<Option target="template"/>
 		</Unit>
 		<Unit filename="/home/ivan/Git/lab-07-asio-server-master/tests/test.cpp">
