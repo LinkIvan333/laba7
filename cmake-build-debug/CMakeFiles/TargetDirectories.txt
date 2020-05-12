@@ -1,0 +1,8 @@
+/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/tests.dir
+/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/log.dir
+/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/main1.dir
+/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/test.dir
+/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/template.dir
+/home/ivan/Git/lab-07-asio-server-master/cmake-build-debug/CMakeFiles/main.dir
